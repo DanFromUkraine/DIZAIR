@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@plugin './hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+header {
+    .HeaderNavBtn {
+        @apply text-gray-700 cursor-pointer font-semibold;
+    }
+
+    button.language-dropdown-trigger {
+        @apply px-3 w-fit min-w-0! gap-1;
+
+        p {
+            @apply text-sm leading-4 font-bold  text-center text-gray-700 uppercase;
+        }
+    }
+}
+
+.select-language-dropdown-menu {
+    /* HeroUI uses React portals, this is why normal nesting won't work under "header" selector */
+    @apply max-h-57 overflow-y-auto;
+
+    ul {
+        @apply gap-0;
+
+        li {
+            @apply px-6 text-gray-700 data-[selected=true]:bg-gray-50 data-[pressed=true]:bg-gray-100! data-[hover=true]:text-gray-700! focus:bg-transparent  data-[hover=true]:bg-gray-50!;
+
+            span {
+                @apply font-semibold;
+            }
+        }
+    }
+}

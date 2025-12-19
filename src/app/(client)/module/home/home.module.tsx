@@ -1,3 +1,9 @@
+import Hero from "./elements/hero/hero.component";
+
 export default function HomeModule() {
-    return <div />;
+    return (
+        <main>
+            {/*<Hero />*/}
+        </main>
+    );
 }
