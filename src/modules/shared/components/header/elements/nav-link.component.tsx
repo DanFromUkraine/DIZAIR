@@ -2,18 +2,34 @@
 import { useTranslations } from "next-intl";
 import { MyLink } from "../../../types/link";
 import { usePathname } from "next/navigation";
-import { NavbarItem } from "@heroui/navbar";
+import { NavbarItem, NavbarMenuItem } from "@heroui/react";
 import Link from "next/link";
 
-export default function NavLink({ href, tKey }: MyLink) {
+export function NavContentLink({ href, tKey }: MyLink) {
     const t = useTranslations("HomeModule.Header");
     const pathname = usePathname();
 
-    console.log(pathname === href);
+    return (
+        <Link href={href}>
+            <NavbarItem isActive={pathname === href} className="HeaderNavBtn">
+                {t(tKey)}
+            </NavbarItem>
+        </Link>
+    );
+}
+
+export function NavMenuLink({ href, tKey }: MyLink) {
+    const t = useTranslations("HomeModule.Header");
+    const pathname = usePathname();
 
     return (
-        <NavbarItem>
-            <Link href={href}>{t(tKey)}</Link>
-        </NavbarItem>
+        <Link href={href}>
+            <NavbarMenuItem
+                isActive={pathname === href}
+                className="HeaderNavMenuBtn"
+            >
+                {t(tKey)}
+            </NavbarMenuItem>
+        </Link>
     );
 }
