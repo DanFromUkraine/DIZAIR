@@ -19,7 +19,7 @@ export function NavLink({ href, tKey, variant }: NavLinkProps) {
       : "border-b-2 border-b-transparent group-data-[active=true]:text-green-accent! p-2 group-data-[active=true]:border-b-green-accent";
 
   return (
-    <Component isActive={isActive} className="group flex">
+    <Component isActive={isActive} className="">
       <Link href={href} className={clsx("w-full nav-link-base", className)}>
         {t(tKey)}
       </Link>
