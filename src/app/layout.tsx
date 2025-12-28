@@ -1,8 +1,8 @@
 import "@/src/styles/main.css";
 import type { Metadata } from "next";
-import Header from "../modules/shared/components/header/header.component";
-import ClientSideProviders from "../modules/shared/providers/clientSideProviders";
-import ServerSideProviders from "../modules/shared/providers/serverSideProviders";
+import Header from "../shared/components/header/header.component";
+import ClientSideProviders from "../shared/providers/clientSideProviders";
+import ServerSideProviders from "../shared/providers/serverSideProviders";
 import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {

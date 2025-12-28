@@ -1,67 +1,39 @@
 @import "tailwindcss";
 @import "./_variables.css";
-@import "./pages/home.css";
 @plugin "./heroui.ts";
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-header {
-    @apply max-w-desktop-screen px-0 py-5;
-
-    > ul {
-        @apply gap-0!;
-    }
-
-    .HeaderNavBtn {
-        @apply text-gray-secondary cursor-pointer font-semibold border-b-2 border-b-transparent data-[active=true]:text-green-accent p-2 data-[active=true]:border-b-green-accent;
-    }
-
-    .language-trigger {
-        @apply p-3 ml-4 w-fit min-w-0! gap-1;
-
-        p {
-            @apply text-sm leading-4 font-bold  text-center text-gray-secondary uppercase;
-        }
-    }
-
-    .navMenuToggle {
-        @apply py-3.5 pl-5 pr-3 w-auto!;
-    }
-
-    .language-modal-container {
-        /*@apply */
-    }
-}
-.NavbarMenu {
-    .HeaderNavMenuBtn {
-        @apply text-xl text-center my-4 text-gray-secondary  py-3.5 w-full mx-auto font-bold;
-    }
-
-    a:first-child > li {
-        &.HeaderNavMenuBtn {
-            @apply text-red-500! pt-0! mt-0!;
-        }
-    }
+.header-like {
+    @apply max-w-desktop-screen px-0 py-5 max-md:py-3 h-auto;
 }
 
-.select-language-dropdown-menu {
-    /* HeroUI uses React portals, this is why normal nesting won't work under "header" selector */
+.toggle-menu-visibility {
+    @apply pr-3 py-3.5 pl-5 box-content;
+}
 
-    @apply max-h-57 overflow-y-auto;
+.nav-link-base {
+    @apply cursor-pointer font-semibold transition-colors duration-200 text-gray-secondary w-fit;
+}
 
-    ul {
-        @apply gap-0;
+.btn-primary {
+    @apply bg-green-accent text-white font-bold rounded-normal hover:brightness-95
+           transition-all active:scale-95;
+}
 
-        li {
-            @apply px-6 py-3 text-gray-secondary data-[selected=true]:bg-gray-50 data-[pressed=true]:bg-gray-100! data-[hover=true]:text-gray-700! focus:bg-transparent  data-[hover=true]:bg-gray-50!;
+.btn-outline {
+    @apply border-1 border-green-accent text-green-accent font-bold rounded-normal mx-4;
+}
 
-            span {
-                @apply font-semibold;
-            }
-        }
-    }
+.big-btn-spacing {
+    @apply px-7 py-3.5;
+}
+
+body,
+.globalPaddings {
+    @apply px-12 max-phone-screen:px-4;
 }
 
 body {
-    @apply max-w-desktop-screen box-content mx-auto px-12;
+    @apply max-w-desktop-screen mx-auto box-content;
 }

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 export default async function Hero() {
-    const t = await getTranslations("HomeModule");
+  const t = await getTranslations("HomeModule");
 
-    return <h1></h1>;
+  return <h1></h1>;
 }

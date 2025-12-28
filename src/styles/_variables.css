@@ -1,6 +1,10 @@
 @theme {
     --spacing-desktop-screen: 1200px;
+    --breakpoint-phone-screen: 450px;
     --color-green-accent: #008558;
     --color-gray-secondary: #000933a6;
+    --color-gray-light: #0015800a;
     --radius-normal: 0.5rem;
+    --text-pre-xl: 1.125rem;
+    --spacing-dropdown-height: 228px;
 }
