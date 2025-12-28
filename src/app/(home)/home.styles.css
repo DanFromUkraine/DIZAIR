@@ -1,0 +1,6 @@
+.special-shadow {
+    filter: drop-shadow(5.03px 12px 10px rgba(0, 0, 0, 0.25))
+        drop-shadow(0 4px 6.04px rgba(0, 0, 0, 0.3))
+        drop-shadow(4.03px 16px 5.07px rgba(0, 0, 0, 0.15));
+    will-change: transform;
+}
