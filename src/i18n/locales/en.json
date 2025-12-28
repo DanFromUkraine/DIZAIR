@@ -13,7 +13,8 @@
       "titleTextAccent": "who you truly are",
       "titleText2": "with the Personality test",
       "subtitle": "With this test, you will find out your exact personality type.",
-      "disclaimer": "By using this site, you agree with the terms & conditions"
+      "disclaimer": "By using this site, you agree with the terms & conditions",
+      "imageAlt": "Application use example illustration"
     },
     "start-test": "Start Personality Test"
   }

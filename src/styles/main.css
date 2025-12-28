@@ -4,29 +4,33 @@
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-.header-like {
-    @apply max-w-desktop-screen px-0 max-md:px-4 py-5 max-md:py-3 h-auto;
+.big-btn-spacing {
+    @apply px-7 py-3.5;
 }
 
-.toggle-menu-visibility {
-    @apply pr-3 py-3.5 pl-5 box-content;
+.f-col {
+    @apply flex flex-col;
 }
 
 .nav-link-base {
-    @apply cursor-pointer font-semibold transition-colors duration-200 text-gray-secondary w-fit;
+    @apply cursor-pointer font-semibold transition-colors text-gray-secondary w-fit;
 }
 
 .btn-primary {
     @apply bg-green-accent text-white font-bold rounded-normal hover:brightness-95
-           transition-all active:scale-95;
+               transition-all active:scale-95;
 }
 
 .btn-outline {
     @apply border-1 border-green-accent text-green-accent font-bold rounded-normal mx-4;
 }
 
-.big-btn-spacing {
-    @apply px-7 py-3.5;
+.header-like {
+    @apply max-w-desktop-screen px-0 max-md:px-4 py-5 max-md:py-3 h-auto;
+}
+
+.toggle-menu-visibility {
+    @apply pr-3 py-3.5 pl-5 box-content;
 }
 
 body,
