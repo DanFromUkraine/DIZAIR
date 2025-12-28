@@ -1,5 +1,13 @@
 {
     "HomeModule": {
-        "hello": "Hello, world!!! Це значення"
+        "Header": {
+            "home": "Home",
+            "about": "About",
+            "pricing": "Pricing",
+            "faqs": "FAQs",
+            "contact-us": "Contact us",
+            "sign-in": "Sign in",
+            "start-test": "Start Personality Test"
+        }
     }
 }

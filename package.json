@@ -2,6 +2,7 @@
   "name": "dizair",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,13 +11,16 @@
   },
   "dependencies": {
     "@heroui/button": "^2.2.28",
-    "@heroui/system": "^2.4.24",
-    "@heroui/theme": "^2.4.24",
-    "framer-motion": "^12.23.26",
+    "@heroui/react": "^2.8.6",
+    "@heroui/system": "2.4.24",
+    "@heroui/theme": "2.4.24",
+    "clsx": "^2.1.1",
+    "framer-motion": "12.23.26",
     "next": "16.1.0",
     "next-intl": "^4.6.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
