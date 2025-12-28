@@ -26,6 +26,11 @@
         "subtitle": "92% of participants have successfully implemented changes to better their personal and work environments following our recommendations."
       }
     },
+    "IndexNumbers": {
+      "title": "Uncover your exact personality type by completing our test.",
+      "block1Text": "Questions",
+      "block2Text": "Data points analyzed"
+    },
 
     "start-test": "Start Personality Test"
   }
