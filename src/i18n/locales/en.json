@@ -1,13 +1,20 @@
 {
-    "HomeModule": {
-        "Header": {
-            "home": "Home",
-            "about": "About",
-            "pricing": "Pricing",
-            "faqs": "FAQs",
-            "contact-us": "Contact us",
-            "sign-in": "Sign in",
-            "start-test": "Start Personality Test"
-        }
-    }
+  "HomeModule": {
+    "Header": {
+      "home": "Home",
+      "about": "About",
+      "pricing": "Pricing",
+      "faqs": "FAQs",
+      "contact-us": "Contact us",
+      "sign-in": "Sign in"
+    },
+    "Hero": {
+      "titleText1": "Discover",
+      "titleTextAccent": "who you truly are",
+      "titleText2": "with the Personality test",
+      "subtitle": "With this test, you will find out your exact personality type.",
+      "disclaimer": "By using this site, you agree with the terms & conditions"
+    },
+    "start-test": "Start Personality Test"
+  }
 }

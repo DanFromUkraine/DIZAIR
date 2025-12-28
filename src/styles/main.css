@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 .header-like {
-    @apply max-w-desktop-screen px-0 py-5 max-md:py-3 h-auto;
+    @apply max-w-desktop-screen px-0 max-md:px-4 py-5 max-md:py-3 h-auto;
 }
 
 .toggle-menu-visibility {
@@ -31,7 +31,7 @@
 
 body,
 .globalPaddings {
-    @apply px-12 max-phone-screen:px-4;
+    @apply px-0 phone-screen:px-8 md:px-12;
 }
 
 body {
