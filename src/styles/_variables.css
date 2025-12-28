@@ -1,5 +1,6 @@
 @theme {
     --spacing-desktop-screen: 1200px;
+    --breakpoint-desktop-screen: 1200px;
     --breakpoint-phone-screen: 450px;
     --color-green-accent: #008558;
     --color-gray-secondary: #000933a6;
@@ -7,12 +8,15 @@
     --radius-normal: 0.5rem;
     --text-pre-xl: 1.125rem;
     --spacing-dropdown-height: 228px;
+    --spacing-textline-large: 4.375rem;
     --text-large: 3.5rem;
     --text-big: 2.5rem;
+    --text-pre-big: 2rem;
     --spacing-hero-info-block-desk: 545px;
     --color-hero-accent: #ffebd6;
     --spacing-hero-img-phone-w: 216px;
     --spacing-hero-img-phone-h: 440px;
     --color-charcoal: #343741;
     --color-almost-black: #1a1c21;
+    --color-gray-lighter: #f5f6fa;
 }
