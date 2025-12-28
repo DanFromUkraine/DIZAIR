@@ -16,6 +16,17 @@
       "disclaimer": "By using this site, you agree with the terms & conditions",
       "imageAlt": "Application use example illustration"
     },
+    "Benefits": {
+      "Benefit1": {
+        "title": "Find out your personality type within minutes!",
+        "subtitle": "Our test offers in-depth and personalized insights, enabling you to strategize your life and career more effectively."
+      },
+      "Benefit2": {
+        "title": "Discover life-changing insights",
+        "subtitle": "92% of participants have successfully implemented changes to better their personal and work environments following our recommendations."
+      }
+    },
+
     "start-test": "Start Personality Test"
   }
 }
