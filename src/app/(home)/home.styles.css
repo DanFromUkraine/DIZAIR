@@ -5,4 +5,22 @@
     will-change: transform;
 }
 
+.surface-light {
+    @apply bg-gray-lighter rounded-2xl;
+}
 
+.IndexNumbers_spacing {
+    @apply flex gap-4 md:gap-8 max-md:px-4;
+}
+
+.IndexNumbers_block {
+    @apply py-8 px-6 w-full flex flex-col;
+
+    h3 {
+        @apply text-5xl md:text-large leading-textline-large;
+    }
+
+    span {
+        @apply text-gray-secondary max-md:text-sm;
+    }
+}
