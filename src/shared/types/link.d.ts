@@ -1,4 +1,6 @@
+import { TranslatorKey } from "./i18n-global";
+
 export type MyLink = {
-    tKey: string;
+    tKey: TranslatorKey;
     href: string;
 };
