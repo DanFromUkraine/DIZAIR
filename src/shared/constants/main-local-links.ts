@@ -1,4 +1,4 @@
-import { MyLink } from "../types/link";
+import { MyLink } from "@/src/shared/types/link";
 
 export const MAIN_LOCAL_LINKS: MyLink[] = [
   {

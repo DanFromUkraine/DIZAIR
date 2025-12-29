@@ -4,7 +4,7 @@ import { NavbarItem, NavbarMenuItem } from "@heroui/react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NavLinkProps } from "../header";
+import { NavLinkProps } from "@/src/shared/components/header/header";
 import clsx from "clsx";
 
 export function NavLink({ href, tKey, variant }: Readonly<NavLinkProps>) {

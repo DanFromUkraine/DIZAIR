@@ -1,5 +1,5 @@
-import { MAIN_LOCAL_LINKS } from "../../constants/main-local-links";
-import { MyLink } from "../../types/link";
+import { MAIN_LOCAL_LINKS } from "@/src/shared/constants/main-local-links";
+import { MyLink } from "@/src/shared/types/link";
 
 export const FOOTER_LINKS: MyLink[] = [
   ...MAIN_LOCAL_LINKS,

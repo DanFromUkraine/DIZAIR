@@ -1,14 +1,21 @@
+import FindYourTypeSvg from "@/src/shared/svgs/find-your-type.svg";
 import { BenefitProps, Feature, Step } from "./home";
+import GetInsightsSvg from "@/src/shared/svgs/get-insights.svg";
+import Feature1Svg from "@/src/shared/svgs/feature1.svg";
+import Feature2Svg from "@/src/shared/svgs/feature2.svg";
+import Feature3Svg from "@/src/shared/svgs/feature3.svg";
+import Feature4Svg from "@/src/shared/svgs/feature4.svg";
+import Feature5Svg from "@/src/shared/svgs/feature5.svg";
 
 export const BENEFITS: BenefitProps[] = [
   {
-    imgSrc: "/find-your-type.svg",
+    Icon: FindYourTypeSvg,
     titleKey: "Benefit1.title",
     subtitleKey: "Benefit1.subtitle",
     isTopOne: true,
   },
   {
-    imgSrc: "/get-insights.svg",
+    Icon: GetInsightsSvg,
     titleKey: "Benefit2.title",
     subtitleKey: "Benefit2.subtitle",
     isTopOne: false,
@@ -32,27 +39,27 @@ export const STEPS: Step[] = [
 
 export const FEATURES: Feature[] = [
   {
-    iconSrc: "/icons/feature1.svg",
+    Icon: Feature1Svg,
     titleKey: "feature1.title",
     textKey: "feature1.text",
   },
   {
-    iconSrc: "/icons/feature2.svg",
+    Icon: Feature2Svg,
     titleKey: "feature2.title",
     textKey: "feature2.text",
   },
   {
-    iconSrc: "/icons/feature3.svg",
+    Icon: Feature3Svg,
     titleKey: "feature3.title",
     textKey: "feature3.text",
   },
   {
-    iconSrc: "/icons/feature4.svg",
+    Icon: Feature4Svg,
     titleKey: "feature4.title",
     textKey: "feature4.text",
   },
   {
-    iconSrc: "/icons/feature5.svg",
+    Icon: Feature5Svg,
     titleKey: "feature5.title",
     textKey: "feature5.text",
   },

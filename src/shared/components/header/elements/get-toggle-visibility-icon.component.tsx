@@ -1,8 +1,8 @@
 "use client";
 
-import CloseMenuSvg from "../../../svgs/closeMenu.svg";
-import OpenMenuSvg from "../../../svgs/openMenu.svg";
-import { useMenuVisibility } from "../header.store";
+import CloseMenuSvg from "@/src/shared/svgs/closeMenu.svg";
+import OpenMenuSvg from "@/src/shared/svgs/openMenu.svg";
+import { useMenuVisibility } from "@/src/shared/components/header/header.store";
 
 export function ToggleModalVisibilityIcon() {
   const { isMenuOpen } = useMenuVisibility();

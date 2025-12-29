@@ -1,4 +1,4 @@
-import StartPersonalityTest from "@/src/shared/components/simpleOnes/start-test.component";
+import StartPersonalityTest from "@/src/shared/components/ui/start-test.component";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 

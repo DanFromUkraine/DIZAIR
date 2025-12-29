@@ -1,8 +1,6 @@
 import { SvgProps } from "./svgs";
 
 export default function LogoSvg(props: SvgProps) {
-  
-  
   return (
     <svg
       width="168"

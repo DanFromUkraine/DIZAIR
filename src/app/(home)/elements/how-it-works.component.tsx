@@ -1,6 +1,6 @@
-import StartPersonalityTest from "@/src/shared/components/simpleOnes/start-test.component";
+import StartPersonalityTest from "@/src/shared/components/ui/start-test.component";
 import { getTranslations } from "next-intl/server";
-import { STEPS } from "../home.constants";
+import { STEPS } from "@/src/app/(home)/home.constants";
 
 export default async function HowItWorks() {
   const t = await getTranslations("HomeModule");

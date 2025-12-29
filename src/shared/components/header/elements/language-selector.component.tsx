@@ -14,11 +14,11 @@ import {
 } from "@heroui/react";
 import { clsx } from "clsx";
 
-import { LANGUAGE_OPTIONS } from "../header.constants";
+import { LANGUAGE_OPTIONS } from "@/src/shared/components/header/header.constants";
 import { useState } from "react";
-import LogoSvg from "../../../svgs/logo.svg";
-import CloseMenuSvg from "../../../svgs/closeMenu.svg";
-import { useMenuVisibility } from "../header.store";
+import LogoSvg from "@/src/shared/svgs/logo.svg";
+import CloseMenuSvg from "@/src/shared/svgs/closeMenu.svg";
+import { useMenuVisibility } from "@/src/shared/components/header/header.store";
 import LanguagePickerSvg from "@/src/shared/svgs/languagePicker";
 
 export default function LanguageSelector() {
@@ -26,9 +26,7 @@ export default function LanguageSelector() {
 
   return (
     <>
-      <DesktopLanguageDropdown
-        currLanguage={currSelectedLanguage}
-      />
+      <DesktopLanguageDropdown currLanguage={currSelectedLanguage} />
       <MobileLanguageModal currLanguage={currSelectedLanguage} />
     </>
   );
@@ -99,9 +97,7 @@ function DesktopLanguageDropdown({
   );
 }
 
-function MobileLanguageModal({
-  currLanguage,
-}: LanguageSelectorUiItemProps) {
+function MobileLanguageModal({ currLanguage }: LanguageSelectorUiItemProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { closeMenu: closeNavMenu } = useMenuVisibility();
 

@@ -1,6 +1,6 @@
+import { FEATURES } from "@/src/app/(home)/home.constants";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
-import { FEATURE_ICON_SIZE, FEATURES } from "../home.constants";
+import { ReactNode } from "react";
 
 export default async function WhatYouReceive() {
   const t = await getTranslations("HomeModule.WhatYouReceive");
@@ -11,11 +11,11 @@ export default async function WhatYouReceive() {
         {t("title")}
       </h2>
       <ul className="grid grid-cols-1 mt-6 md:mt-8 max-md:gap-y-6 md:gap-x-6! md:grid-cols-5">
-        {FEATURES.map(({ iconSrc, titleKey, textKey }) => (
+        {FEATURES.map(({ Icon, titleKey, textKey }) => (
           <FeatureItem
             key={titleKey}
             {...{
-              iconSrc,
+              Icon,
               title: t(titleKey),
               text: t(textKey),
             }}
@@ -27,24 +27,18 @@ export default async function WhatYouReceive() {
 }
 
 function FeatureItem({
-  iconSrc,
+  Icon,
   title,
   text,
 }: Readonly<{
-  iconSrc: string;
+  Icon: (p: unknown) => ReactNode;
   title: string;
   text: string;
 }>) {
   return (
     <li className="flex md:flex-col md:items-center">
       <div className="flex items-center justify-center shrink-0 bg-green-accent rounded-full size-12">
-        <Image
-          className=""
-          src={iconSrc}
-          alt=""
-          width={FEATURE_ICON_SIZE.width}
-          height={FEATURE_ICON_SIZE.height}
-        />
+        <Icon />
       </div>
 
       <div className="max-md:ml-4 *:md:text-center">

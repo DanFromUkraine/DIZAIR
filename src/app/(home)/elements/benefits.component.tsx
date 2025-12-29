@@ -3,7 +3,6 @@ import { BENEFITS } from "@/src/app/(home)/home.constants";
 import { Translator } from "@/src/shared/types/i18n-global";
 import clsx from "clsx";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
 import { ReactNode } from "react";
 
 export default async function BenefitsContainer() {
@@ -18,7 +17,7 @@ export default async function BenefitsContainer() {
 }
 
 function Benefit({
-  imgSrc,
+  Icon,
   titleKey,
   subtitleKey,
   isTopOne,
@@ -29,7 +28,7 @@ function Benefit({
       <Title className={clsx("hidden", { "max-md:flex": isTopOne })}>
         {t(titleKey)}
       </Title>
-      <Image src={imgSrc} alt="" width={280} height={280} />
+      <Icon />
       <div className="f-col gap-3">
         <Title className={clsx({ "max-md:hidden": isTopOne })}>
           {t(titleKey)}

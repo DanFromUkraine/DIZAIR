@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { FOOTER_LINKS } from "../footer.constants";
+import { FOOTER_LINKS } from "@/src/shared/components/footer/footer.constants";
 
 export default async function LinksList() {
   const t = await getTranslations();

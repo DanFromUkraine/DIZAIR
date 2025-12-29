@@ -11,11 +11,11 @@ import LanguageSelector from "./elements/language-selector.component";
 import SignInBtn from "./elements/signin-btn.component";
 import { useMenuVisibility } from "./header.store";
 import Link from "next/link";
-import LogoSvg from "../../svgs/logo.svg";
+import LogoSvg from "@/src/shared/svgs/logo.svg";
 import { ToggleModalVisibilityIcon } from "./elements/get-toggle-visibility-icon.component";
 import { NavLink } from "./elements/nav-link.component";
-import StartPersonalityTest from "../simpleOnes/start-test.component";
-import { MAIN_LOCAL_LINKS } from "../../constants/main-local-links";
+import StartPersonalityTest from "@/src/shared/components/ui/start-test.component";
+import { MAIN_LOCAL_LINKS } from "@/src/shared/constants/main-local-links";
 
 export default function Header() {
   const { isMenuOpen, setIsMenuOpen } = useMenuVisibility();

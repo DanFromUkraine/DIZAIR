@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import Header from "../shared/components/header/header.component";
-import ClientSideProviders from "../shared/providers/clientSideProviders";
-import ServerSideProviders from "../shared/providers/serverSideProviders";
+import Header from "@/src/shared/components/header/header.component";
+import ClientSideProviders from "@/src/shared/providers/clientSideProviders";
+import ServerSideProviders from "@/src/shared/providers/serverSideProviders";
 import { Inter } from "next/font/google";
 import "@/src/styles/main.css";
-import Footer from "../shared/components/footer/footer.component";
+import Footer from "@/src/shared/components/footer/footer.component";
 
 export const metadata: Metadata = {
   title: "Test assessment for DIZAIR",
   description: "Example site. Landing implementation of ",
-  icons: [
-    {
-      url: "/icons/favicon.svg",
-      type: "image/svg+xml",
-    },
-  ],
 };
 
 type RootLayoutProps = Readonly<{

@@ -1,4 +1,4 @@
-import LogoSvg from "../../svgs/logo.svg";
+import LogoSvg from "@/src/shared/svgs/logo.svg";
 import Disclaimer from "./elements/disclaimer.component";
 import LinksList from "./elements/links-list.component";
 import RightsNote from "./elements/rights.component";
