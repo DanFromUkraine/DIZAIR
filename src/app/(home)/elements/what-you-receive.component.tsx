@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { FEATURES } from "../home.constants";
+import { FEATURE_ICON_SIZE, FEATURES } from "../home.constants";
 
 export default async function WhatYouReceive() {
   const t = await getTranslations("HomeModule.WhatYouReceive");
@@ -37,21 +37,19 @@ function FeatureItem({
 }) {
   return (
     <li className="flex md:flex-col md:items-center">
-      <div className="relative flex items-center justify-center shrink-0 bg-green-accent rounded-full p-4 box-content size-4">
+      <div className="flex items-center justify-center shrink-0 bg-green-accent rounded-full size-12">
         <Image
-          className="absolute"
+          className=""
           src={iconSrc}
           alt=""
-          width={22.4}
-          height={33.6}
+          width={FEATURE_ICON_SIZE.width}
+          height={FEATURE_ICON_SIZE.height}
         />
       </div>
 
-      <div className="max-md:ml-4">
-        <h3 className="md:mt-4 font-semibold text-midnight-blue md:text-center">
-          {title}
-        </h3>
-        <p className="md:text-center mt-1 text-sm text-gray-secondary leading-textline-secondary">
+      <div className="max-md:ml-4 *:md:text-center">
+        <h3 className="md:mt-4 font-semibold text-midnight-blue ">{title}</h3>
+        <p className=" mt-1 text-sm text-gray-secondary leading-textline-secondary">
           {text}
         </p>
       </div>

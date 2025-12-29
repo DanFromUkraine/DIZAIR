@@ -64,7 +64,7 @@ function DesktopContent() {
         <NavLink variant="content" key={link.tKey} {...link} />
       ))}
       <SignInBtn />
-      <StartPersonalityTest className="px-4 "/>
+      <StartPersonalityTest className="px-4 " />
       <LanguageSelector />
     </NavbarContent>
   );
@@ -72,7 +72,7 @@ function DesktopContent() {
 
 function MobileMenu() {
   return (
-    <NavbarMenu className="mt-5 flex flex-col justify-center items-center bg-white">
+    <NavbarMenu className="flex overflow-hidden gap-0! flex-col justify-center items-center bg-white">
       {MAIN_LOCAL_LINKS.map((link) => (
         <NavLink variant="menu" key={link.tKey} {...link} />
       ))}

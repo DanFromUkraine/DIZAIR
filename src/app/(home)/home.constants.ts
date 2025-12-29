@@ -57,3 +57,8 @@ export const FEATURES: Feature[] = [
     textKey: "feature5.text",
   },
 ];
+
+export const FEATURE_ICON_SIZE = {
+  width: 22.4,
+  height: 33.6,
+};
