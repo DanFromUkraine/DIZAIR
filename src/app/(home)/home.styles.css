@@ -1,3 +1,5 @@
+@reference "../../styles/main.css";
+
 .special-shadow {
     filter: drop-shadow(5.03px 12px 10px rgba(0, 0, 0, 0.25))
         drop-shadow(0 4px 6.04px rgba(0, 0, 0, 0.3))
@@ -10,14 +12,14 @@
 }
 
 .IndexNumbers_spacing {
-    @apply flex gap-4 md:gap-8 max-md:px-4;
+    @apply flex gap-4 md:gap-8;
 }
 
 .IndexNumbers_block {
     @apply py-8 px-6 w-full flex flex-col;
 
     h3 {
-        @apply text-5xl md:text-large leading-textline-large;
+        @apply text-5xl leading-textline-big md:text-large md:leading-textline-large;
     }
 
     span {

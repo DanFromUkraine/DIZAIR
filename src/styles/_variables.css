@@ -9,6 +9,7 @@
     --text-pre-xl: 1.125rem;
     --spacing-dropdown-height: 228px;
     --spacing-textline-large: 4.375rem;
+    --spacing-textline-big: 3.75rem;
     --text-large: 3.5rem;
     --text-big: 2.5rem;
     --text-pre-big: 2rem;
@@ -19,4 +20,6 @@
     --color-charcoal: #343741;
     --color-almost-black: #1a1c21;
     --color-gray-lighter: #f5f6fa;
+    --color-gray-light-v2: #e5e7ef;
+    --color-midnight-blue: #000626e5;
 }

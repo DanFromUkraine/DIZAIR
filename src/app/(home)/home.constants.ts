@@ -1,4 +1,4 @@
-import { BenefitProps } from "./home";
+import { BenefitProps, Step } from "./home";
 
 export const BENEFITS: BenefitProps[] = [
   {
@@ -12,5 +12,20 @@ export const BENEFITS: BenefitProps[] = [
     titleKey: "Benefit2.title",
     subtitleKey: "Benefit2.subtitle",
     isTopOne: false,
+  },
+];
+
+export const STEPS: Step[] = [
+  {
+    titleKey: "HowItWorks.step1.title",
+    textKey: "HowItWorks.step1.text",
+  },
+  {
+    titleKey: "HowItWorks.step2.title",
+    textKey: "HowItWorks.step2.text",
+  },
+  {
+    titleKey: "HowItWorks.step3.title",
+    textKey: "HowItWorks.step3.text",
   },
 ];

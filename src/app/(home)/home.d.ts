@@ -6,3 +6,8 @@ export interface BenefitProps {
   subtitleKey: TranslatorKey;
   isTopOne: boolean;
 }
+
+export interface Step {
+  titleKey: TranslatorKey;
+  textKey: TranslatorKey;
+}
