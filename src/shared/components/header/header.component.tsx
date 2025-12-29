@@ -9,13 +9,13 @@ import {
 } from "@heroui/react";
 import LanguageSelector from "./elements/language-selector.component";
 import SignInBtn from "./elements/signin-btn.component";
-import StartPersonalityTest from "./elements/start-test.component";
 import { MAIN_LOCAL_LINKS } from "./header.constants";
 import { useMenuVisibility } from "./header.store";
 import Link from "next/link";
 import LogoSvg from "../../svgs/logo.svg";
 import { ToggleModalVisibilityIcon } from "./elements/get-toggle-visibility-icon.component";
 import { NavLink } from "./elements/nav-link.component";
+import StartPersonalityTest from "../simpleOnes/start-test.component";
 
 export default function Header() {
   const { isMenuOpen, setIsMenuOpen } = useMenuVisibility();
@@ -64,7 +64,7 @@ function DesktopContent() {
         <NavLink variant="content" key={link.tKey} {...link} />
       ))}
       <SignInBtn />
-      <StartPersonalityTest />
+      <StartPersonalityTest className="px-4 "/>
       <LanguageSelector />
     </NavbarContent>
   );
@@ -72,7 +72,7 @@ function DesktopContent() {
 
 function MobileMenu() {
   return (
-    <NavbarMenu className="mt-5">
+    <NavbarMenu className="mt-5 flex flex-col justify-center items-center bg-white">
       {MAIN_LOCAL_LINKS.map((link) => (
         <NavLink variant="menu" key={link.tKey} {...link} />
       ))}

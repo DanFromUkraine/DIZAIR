@@ -1,6 +1,4 @@
-// import BigGreenBtn from "@/src/shared/components/simpleOnes/green-btn.component";
-import BigGreenBtn from "@/src/shared/components/simpleOnes/green-btn.component";
-import { Button } from "@heroui/button";
+import StartPersonalityTest from "@/src/shared/components/simpleOnes/start-test.component";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -32,7 +30,7 @@ async function HeroContent() {
       </div>
 
       <div className="flex flex-col gap-4 max-md:items-center">
-        <BigGreenBtn>{t("start-test")}</BigGreenBtn>
+        <StartPersonalityTest className="big-btn-spacing text-pre-xl leading-7 h-auto" />
         <p className="text-xs text-gray-secondary">{t("Hero.disclaimer")}</p>
       </div>
     </div>

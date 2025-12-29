@@ -4,7 +4,7 @@ export default async function IndexNumbers() {
   const t = await getTranslations("HomeModule.IndexNumbers");
 
   return (
-    <section className="w-full max-desktop-screen:flex-col IndexNumbers_spacing">
+    <section className="w-full max-desktop-screen:flex-col max-md:px-4 IndexNumbers_spacing">
       <h2 className="text-charcoal px-8 grow py-10 leading-10 text-2xl md:text-pre-big surface-light">
         {t("title")}
       </h2>

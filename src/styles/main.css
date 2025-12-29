@@ -13,7 +13,7 @@
 }
 
 .nav-link-base {
-    @apply cursor-pointer font-semibold transition-colors text-gray-secondary w-fit;
+    @apply flex cursor-pointer font-semibold transition-colors text-gray-secondary w-fit;
 }
 
 .btn-primary {

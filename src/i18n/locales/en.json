@@ -31,6 +31,21 @@
       "block1Text": "Questions",
       "block2Text": "Data points analyzed"
     },
+    "HowItWorks": {
+      "title": "How it works",
+      "step1": {
+        "title": "Prepare yourself",
+        "text": "Ensure you're in a relaxed setting conducive to concentration for the test."
+      },
+      "step2": {
+        "title": "Complete the test",
+        "text": "Respond to 100 questions designed to reveal aspects of your personality."
+      },
+      "step3": {
+        "title": "Receive your insights",
+        "text": "Access your report to explore the various personality types and find out where you belong!"
+      }
+    },
 
     "start-test": "Start Personality Test"
   }
