@@ -1,13 +1,27 @@
 {
-  "HomeModule": {
-    "Header": {
-      "home": "Home",
-      "about": "About",
-      "pricing": "Pricing",
-      "faqs": "FAQs",
-      "contact-us": "Contact us",
-      "sign-in": "Sign in"
+  "baseRoutes": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "faqs": "FAQs",
+    "contact-us": "Contact us",
+    "sign-in": "Sign in"
+  },
+  "footer": {
+    "footerSpecificRoutes": {
+      "cancel-sub": "Cancel Subscription",
+      "privacy-policy": "Privacy Policy",
+      "use-terms": "Terms of Use",
+      "free-test": "Free Personality Test"
     },
+    "disclaimer-part1": "Disclaimer: The Site does not offer professional or definitively accurate",
+    "disclaimer-whole": "Disclaimer: The Site does not offer professional or definitively accurate advice or opinions regarding products or services. The information and opinions provided are for entertainment and educational purposes only and should not replace professional advice. Therefore, before making any decisions based on your scores, we recommend consulting with appropriate professionals. We do not provide any professional or definitively accurate advice on products or services. ANY USE OR RELIANCE ON INFORMATION FOUND ON THE SITE IS AT YOUR OWN RISK.",
+    "show-whole-disclaimer": "read more",
+    "hide-whole-disclaimer": "read less",
+    "rights-note": "© 2025 Novomedia EOOD. All rights reserved."
+  },
+  "start-test": "Start Personality Test",
+  "HomeModule": {
     "Hero": {
       "titleText1": "Discover",
       "titleTextAccent": "who you truly are",
@@ -68,8 +82,6 @@
         "title": "Certificates",
         "text": "Upon completing the courses and passing the tests, you will receive a downloadable certificate."
       }
-    },
-
-    "start-test": "Start Personality Test"
+    }
   }
 }

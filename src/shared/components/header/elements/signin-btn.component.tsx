@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
 export default function SignInBtn({ className }: { className?: string }) {
-  const t = useTranslations("HomeModule.Header");
+  const t = useTranslations("baseRoutes");
   return (
     <Button
       disableAnimation
