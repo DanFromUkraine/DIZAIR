@@ -4,18 +4,20 @@ import ClientSideProviders from "@/src/shared/providers/clientSideProviders";
 import ServerSideProviders from "@/src/shared/providers/serverSideProviders";
 import { Inter } from "next/font/google";
 import "@/src/styles/main.css";
-import Footer from "@/src/shared/components/footer/footer.component";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "Test assessment for DIZAIR",
   description: "Example site. Landing implementation of ",
 };
-
 type RootLayoutProps = Readonly<{
   children: React.ReactNode;
 }>;
-
 const fontInstance = Inter({ subsets: ["latin"] });
+
+const Footer = dynamic(
+  () => import("@/src/shared/components/footer/footer.component"),
+);
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (

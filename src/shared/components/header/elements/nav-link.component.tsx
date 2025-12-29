@@ -20,7 +20,11 @@ export function NavLink({ href, tKey, variant }: Readonly<NavLinkProps>) {
 
   return (
     <Component isActive={isActive} className="group">
-      <Link href={href} className={clsx("w-full nav-link-base", className)}>
+      <Link
+        aria-label="Go to other base page on this domain"
+        href={href}
+        className={clsx("w-full nav-link-base", className)}
+      >
         {t(tKey)}
       </Link>
     </Component>

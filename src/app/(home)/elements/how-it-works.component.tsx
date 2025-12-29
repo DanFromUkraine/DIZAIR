@@ -38,13 +38,13 @@ function StepItem({
 }>) {
   return (
     <li className="flex max-md:gap-4 md:flex-col">
-      <h4 className="p-6 text-gray-secondary rounded-full size-14 md:size-18! flex items-center font-bold justify-center text-xl md:text-pre-big border-2 border-gray-light-v2 bg-white">
+      <h3 className="p-6 text-gray-secondary rounded-full size-14 md:size-18! flex items-center font-bold justify-center text-xl md:text-pre-big border-2 border-gray-light-v2 bg-white">
         {index + 1}
-      </h4>
+      </h3>
       <div className="flex flex-col md:gap-2">
-        <h3 className="text-xl leading-inherit! md:text-2xl md:mt-4 text-midnight-blue">
+        <h4 className="text-xl leading-inherit! md:text-2xl md:mt-4 text-midnight-blue">
           {title}
-        </h3>
+        </h4>
         <p className="mt-2 text-gray-secondary">{text}</p>
       </div>
     </li>

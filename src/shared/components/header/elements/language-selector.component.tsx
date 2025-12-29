@@ -11,6 +11,7 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
+  NavbarItem,
 } from "@heroui/react";
 import { clsx } from "clsx";
 
@@ -42,18 +43,20 @@ function TriggerButton({
   ...props
 }: ButtonProps & LanguageSelectorUiItemProps) {
   return (
-    <Button
-      variant="light"
-      disableAnimation
-      {...props}
-      className={clsx("p-3 ml-4 w-fit min-w-0! gap-1", className)}
-    >
-      <LanguagePickerSvg />
+    <NavbarItem>
+      <Button
+        variant="light"
+        disableAnimation
+        {...props}
+        className={clsx("p-3 ml-4 w-fit min-w-0! gap-1", className)}
+      >
+        <LanguagePickerSvg />
 
-      <span className="uppercase text-sm leading-4 font-bold  text-center text-gray-secondary">
-        {currLanguage}
-      </span>
-    </Button>
+        <span className="uppercase text-sm leading-4 font-bold  text-center text-gray-secondary">
+          {currLanguage}
+        </span>
+      </Button>
+    </NavbarItem>
   );
 }
 

@@ -27,3 +27,13 @@ pnpm dev
 ```bash
 pnpm build
 ```
+
+## Щодо Lighthouse
+
+### Мій сайт:
+
+![Мій сайт](_readme-images/my-site.png)
+
+### Оригінальний сайт:
+
+![Оригінальний сайт](_readme-images/original-site.png)

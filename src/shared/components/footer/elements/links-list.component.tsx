@@ -8,13 +8,15 @@ export default async function LinksList() {
   return (
     <ul className="grid grid-cols-2 gap-y-2 xl:grid-cols-3">
       {FOOTER_LINKS.map((l) => (
-        <Link
-          key={l.tKey}
-          href={l.href}
-          className="text-sm text-gray-secondary"
-        >
-          {t(l.tKey)}
-        </Link>
+        <li key={l.tKey}>
+          <Link
+            aria-label="Go to other page on this domain"
+            href={l.href}
+            className="text-sm text-gray-secondary"
+          >
+            {t(l.tKey)}
+          </Link>
+        </li>
       ))}
     </ul>
   );

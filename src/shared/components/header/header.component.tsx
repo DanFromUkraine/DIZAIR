@@ -4,6 +4,7 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
+  NavbarItem,
   NavbarMenu,
   NavbarMenuToggle,
 } from "@heroui/react";
@@ -33,7 +34,7 @@ export default function Header() {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarBrand>
-        <Link href="/">
+        <Link aria-label="Go to Home page" href="/">
           <LogoSvg />
         </Link>
       </NavbarBrand>
@@ -48,11 +49,13 @@ function MobileContent() {
   return (
     <NavbarContent className="xl:hidden" justify="end">
       <LanguageSelector />
-      <NavbarMenuToggle
-        className="toggle-menu-visibility"
-        aria-label="toggle menu visibility"
-        icon={<ToggleModalVisibilityIcon />}
-      />
+      <NavbarItem>
+        <NavbarMenuToggle
+          className="toggle-menu-visibility"
+          aria-label="toggle menu visibility"
+          icon={<ToggleModalVisibilityIcon />}
+        />
+      </NavbarItem>
     </NavbarContent>
   );
 }
