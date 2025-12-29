@@ -24,12 +24,12 @@ function Benefit({
   t,
 }: BenefitProps & { t: Translator }) {
   return (
-    <div className={clsx("f-col items-center p-8 gap-6")}>
+    <div className={clsx("flex flex-col items-center p-8 gap-6")}>
       <Title className={clsx("hidden", { "max-md:flex": isTopOne })}>
         {t(titleKey)}
       </Title>
       <Icon />
-      <div className="f-col gap-3">
+      <div className="flex flex-col gap-3">
         <Title className={clsx({ "max-md:hidden": isTopOne })}>
           {t(titleKey)}
         </Title>

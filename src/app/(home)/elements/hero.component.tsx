@@ -15,8 +15,8 @@ async function HeroContent() {
   const t = await getTranslations("HomeModule");
 
   return (
-    <div className="md:max-w-hero-info-block-desk p-8 md:p-12 md:pr-0 box-border f-col gap-11">
-      <div className="f-col max-md:items-center">
+    <div className="md:max-w-hero-info-block-desk p-8 md:p-12 md:pr-0 box-border flex flex-col gap-11">
+      <div className="flex flex-col max-md:items-center">
         <h1 className="gap-2 max-md:text-center tracking-tight md:leading-17! leading-12 text-big md:text-large font-bold mb-4">
           {t("Hero.titleText1")}
           <span className="text-green-accent mx-2 md:mx-3">

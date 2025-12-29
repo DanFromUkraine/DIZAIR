@@ -48,7 +48,10 @@ function TriggerButton({
         variant="light"
         disableAnimation
         {...props}
-        className={clsx("p-3 ml-4 w-fit min-w-0! gap-1", className)}
+        className={clsx(
+          "p-3 small-phone-screen:ml-4 w-fit min-w-0! gap-1",
+          className,
+        )}
       >
         <LanguagePickerSvg />
 
@@ -117,26 +120,27 @@ function MobileLanguageModal({ currLanguage }: LanguageSelectorUiItemProps) {
         {...{ currLanguage, className: "xl:hidden", onPress: openLangModal }}
       />
       <Modal
+        scrollBehavior="inside"
         isOpen={isModalOpen}
         size="full"
         disableAnimation
         onClose={closeLangModal}
         classNames={{
-          body: "px-4 pb-4 gap-2",
+          body: "pb-4 gap-2",
           closeButton: "hidden",
           header:
-            "header-like globalPaddings flex justify-between items-center",
+            "header-like max-md:mx-8 max-phone-screen:mx-0! globalPaddings flex justify-between items-center",
         }}
       >
         <ModalContent>
           <ModalHeader>
             <LogoSvg
               onClick={closeLangModal}
-              className="text-medium font-normal"
+              className="text-medium font-normal "
             />
             <CloseMenuSvg
               onClick={closeLangModal}
-              className="toggle-menu-visibility"
+              className="toggle-menu-visibility "
             />
           </ModalHeader>
 
@@ -148,7 +152,7 @@ function MobileLanguageModal({ currLanguage }: LanguageSelectorUiItemProps) {
                 variant="light"
                 data-selected={id_i18n === currLanguage}
                 disableAnimation
-                className="text-gray-secondary justify-start font-semibold hover:bg-gray-light! data-[selected=true]:bg-gray-light"
+                className="text-gray-secondary shrink-0! justify-start font-semibold hover:bg-gray-light! data-[selected=true]:bg-gray-light"
               >
                 {label}
               </Button>

@@ -2,6 +2,7 @@
     --spacing-desktop-screen: 1200px;
     --breakpoint-desktop-screen: 1200px;
     --breakpoint-phone-screen: 450px;
+    --breakpoint-small-phone-screen: 350px;
     --color-green-accent: #008558;
     --color-gray-secondary: #000933a6;
     --color-gray-light: #0015800a;

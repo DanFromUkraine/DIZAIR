@@ -8,10 +8,6 @@
     @apply px-7 py-3.5;
 }
 
-.f-col {
-    @apply flex flex-col;
-}
-
 .nav-link-base {
     @apply flex cursor-pointer font-semibold transition-colors text-gray-secondary w-fit;
 }
@@ -26,7 +22,7 @@
 }
 
 .header-like {
-    @apply max-w-desktop-screen px-0 max-md:px-4 py-5 max-md:py-3 h-auto;
+    @apply max-w-desktop-screen px-0 max-md:px-4! py-5 max-md:py-3 h-auto max-small-phone-screen:gap-0;
 }
 
 .toggle-menu-visibility {
