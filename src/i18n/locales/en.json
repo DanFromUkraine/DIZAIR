@@ -46,6 +46,29 @@
         "text": "Access your report to explore the various personality types and find out where you belong!"
       }
     },
+    "WhatYouReceive": {
+      "title": "What You Will Receive",
+      "feature1": {
+        "title": "Personality Report",
+        "text": "A highly detailed and straightforward report that reveals your strengths and weaknesses."
+      },
+      "feature2": {
+        "title": "Daily Challenges",
+        "text": "Activities designed to help you improve your personality incrementally each day."
+      },
+      "feature3": {
+        "title": "Test Library",
+        "text": "Access to over 20 assessment tests to help you evaluate your soft and hard skills."
+      },
+      "feature4": {
+        "title": "Course Library",
+        "text": "Based on your test results, you can enroll in specific courses aimed at enhancing your skills."
+      },
+      "feature5": {
+        "title": "Certificates",
+        "text": "Upon completing the courses and passing the tests, you will receive a downloadable certificate."
+      }
+    },
 
     "start-test": "Start Personality Test"
   }

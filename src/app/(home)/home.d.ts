@@ -11,3 +11,9 @@ export interface Step {
   titleKey: TranslatorKey;
   textKey: TranslatorKey;
 }
+
+export interface Feature {
+  iconSrc: string;
+  titleKey: TranslatorKey;
+  textKey: TranslatorKey;
+}
