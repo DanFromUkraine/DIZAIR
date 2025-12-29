@@ -45,10 +45,10 @@ function Benefit({
 function Title({
   className,
   children,
-}: {
+}: Readonly<{
   className?: string;
   children: ReactNode;
-}) {
+}>) {
   return (
     <h2
       className={clsx(

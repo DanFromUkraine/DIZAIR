@@ -22,9 +22,9 @@ export default function Disclaimer() {
   return (
     <p className="text-gray-secondary cursor-pointer">
       {disclaimerText}
-      <span onClick={buttonAction} className="underline pl-1">
+      <button onClick={buttonAction} className="underline pl-1">
         {buttonText}
-      </span>
+      </button>
     </p>
   );
 }

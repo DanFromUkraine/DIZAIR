@@ -7,8 +7,6 @@ import {
   ModalBody,
   ModalContent,
   ModalHeader,
-} from "@heroui/react";
-import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
@@ -28,10 +26,10 @@ export default function LanguageSelector() {
 
   return (
     <>
-      <LanguageSelectorDropdown__DesktopOnly
+      <DesktopLanguageDropdown
         currLanguage={currSelectedLanguage}
       />
-      <LanguageSelectorModal__MobileOnly currLanguage={currSelectedLanguage} />
+      <MobileLanguageModal currLanguage={currSelectedLanguage} />
     </>
   );
 }
@@ -61,7 +59,7 @@ function TriggerButton({
   );
 }
 
-function LanguageSelectorDropdown__DesktopOnly({
+function DesktopLanguageDropdown({
   currLanguage,
 }: LanguageSelectorUiItemProps) {
   const selectedKeys = new Set([currLanguage]);
@@ -101,7 +99,7 @@ function LanguageSelectorDropdown__DesktopOnly({
   );
 }
 
-function LanguageSelectorModal__MobileOnly({
+function MobileLanguageModal({
   currLanguage,
 }: LanguageSelectorUiItemProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);

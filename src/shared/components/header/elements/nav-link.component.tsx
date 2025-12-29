@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { NavLinkProps } from "../header";
 import clsx from "clsx";
 
-export function NavLink({ href, tKey, variant }: NavLinkProps) {
+export function NavLink({ href, tKey, variant }: Readonly<NavLinkProps>) {
   const t = useTranslations();
   const pathname = usePathname();
   const isActive = pathname === href;

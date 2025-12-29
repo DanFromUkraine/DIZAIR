@@ -31,11 +31,11 @@ function StepItem({
   title,
   text,
   index,
-}: {
+}: Readonly<{
   title: string;
   text: string;
   index: number;
-}) {
+}>) {
   return (
     <li className="flex max-md:gap-4 md:flex-col">
       <h4 className="p-6 text-gray-secondary rounded-full size-14 md:size-18! flex items-center font-bold justify-center text-xl md:text-pre-big border-2 border-gray-light-v2 bg-white">

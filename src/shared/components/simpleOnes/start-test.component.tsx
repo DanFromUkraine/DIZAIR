@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 
 export default function StartPersonalityTest({
   className,
-}: {
+}: Readonly<{
   className?: string;
-}) {
+}>) {
   const t = useTranslations();
 
   return (

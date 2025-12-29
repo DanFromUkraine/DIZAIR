@@ -30,11 +30,11 @@ function FeatureItem({
   iconSrc,
   title,
   text,
-}: {
+}: Readonly<{
   iconSrc: string;
   title: string;
   text: string;
-}) {
+}>) {
   return (
     <li className="flex md:flex-col md:items-center">
       <div className="flex items-center justify-center shrink-0 bg-green-accent rounded-full size-12">
