@@ -9,13 +9,13 @@ import {
 } from "@heroui/react";
 import LanguageSelector from "./elements/language-selector.component";
 import SignInBtn from "./elements/signin-btn.component";
-import { MAIN_LOCAL_LINKS } from "./header.constants";
 import { useMenuVisibility } from "./header.store";
 import Link from "next/link";
 import LogoSvg from "../../svgs/logo.svg";
 import { ToggleModalVisibilityIcon } from "./elements/get-toggle-visibility-icon.component";
 import { NavLink } from "./elements/nav-link.component";
 import StartPersonalityTest from "../simpleOnes/start-test.component";
+import { MAIN_LOCAL_LINKS } from "../../constants/main-local-links";
 
 export default function Header() {
   const { isMenuOpen, setIsMenuOpen } = useMenuVisibility();

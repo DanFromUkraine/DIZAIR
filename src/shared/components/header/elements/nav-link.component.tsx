@@ -8,7 +8,7 @@ import { NavLinkProps } from "../header";
 import clsx from "clsx";
 
 export function NavLink({ href, tKey, variant }: NavLinkProps) {
-  const t = useTranslations("HomeModule.Header");
+  const t = useTranslations();
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -16,7 +16,7 @@ export function NavLink({ href, tKey, variant }: NavLinkProps) {
   const className =
     variant === "menu"
       ? "text-xl text-center my-4 text-gray-secondary  py-3.5 mx-auto font-bold group-data-[active=true]:text-green-accent!"
-      : "border-b-2 border-b-transparent group-data-[active=true]:text-green-accent! p-2 group-data-[active=true]:border-b-green-accent";
+      : "border-b-2 border-b-transparent group-data-[active=true]:text-green-accent! hover:text-green-accent! p-2 group-data-[active=true]:border-b-green-accent";
 
   return (
     <Component isActive={isActive} className="group">

@@ -4,10 +4,17 @@ import ClientSideProviders from "../shared/providers/clientSideProviders";
 import ServerSideProviders from "../shared/providers/serverSideProviders";
 import { Inter } from "next/font/google";
 import "@/src/styles/main.css";
+import Footer from "../shared/components/footer/footer.component";
 
 export const metadata: Metadata = {
   title: "Test assessment for DIZAIR",
   description: "Example site. Landing implementation of ",
+  icons: [
+    {
+      url: "/icons/favicon.svg",
+      type: "image/svg+xml",
+    },
+  ],
 };
 
 type RootLayoutProps = Readonly<{
@@ -24,6 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ServerSideProviders>
             <Header />
             {children}
+            <Footer />
           </ServerSideProviders>
         </ClientSideProviders>
       </body>

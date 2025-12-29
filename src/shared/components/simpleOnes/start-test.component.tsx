@@ -9,7 +9,7 @@ export default function StartPersonalityTest({
 }: {
   className?: string;
 }) {
-  const t = useTranslations("HomeModule");
+  const t = useTranslations();
 
   return (
     <Button
