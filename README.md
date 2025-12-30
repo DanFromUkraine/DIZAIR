@@ -7,7 +7,7 @@
 1. Клонуйте репозиторій:
 
 ```bash
-git clone https://github.com/your-username/project-name.git .
+git clone https://github.com/DanFromUkraine/DIZAIR.git .
 ```
 
 2. Встановіть залежності:
